@@ -1,0 +1,61 @@
+body {
+    margin: 5px 0px 0px 0px;
+    background-color: green;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer"
+}
+
+.barra {
+    background-color: green;
+    background-size: cover;
+    height: 15px;
+}
+
+
+header {
+    display: flex;
+    grid-area: header;
+
+}
+
+.banner {
+    background-image: url(banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100%;
+}
+
+h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 50pt;
+    margin-left: 8pt;
+}
+
+h3 span {
+    color: green;
+}
+
+footer {
+    grid-area: footer;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+footer nav a {
+    text-decoration: none;
+}
