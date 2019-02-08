@@ -15,15 +15,7 @@ body {
     "footer footer footer"
 }
 
-.barra {
-    background-color: green;
-    background-size: cover;
-    height: 15px;
-}
-
-
 header {
-    display: flex;
     grid-area: header;
 
 }
@@ -35,9 +27,13 @@ header {
     background-repeat: no-repeat;
     height: 50vw;
     width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
 }
 
 h3 {
+    color: white;
     font-family: "Pacifico", cursive;
     font-size: 50pt;
     margin-left: 8pt;
@@ -47,13 +43,95 @@ h3 span {
     color: green;
 }
 
-footer {
-    grid-area: footer;
-    background-color: grey;
+.banner p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+}
+
+.icones {
+    opacity: 0.5;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
+}
+
+.ios:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.ios {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.android {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.windows {
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    grid-area: main;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icone1 {
+    border-radius: 100px;
+    background-color:green;
+    opacity: 1;
+    padding: 10px;
+}
+
+.icone2 {
+    background-color:green;
+    opacity: 1;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.icone3 {
+    background-color:green;
+    opacity: 1;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20pt;
+    color: gray;
 }
 
 footer nav a {
